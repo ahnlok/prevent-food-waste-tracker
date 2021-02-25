@@ -74,6 +74,7 @@ const Main = () => {
             {items.map((item) => (
                 <li key={item.name} className="item_list">
                     Name: {item.name} - Category: {item.category} - Expiration Date: {item.expiration}
+    {/* Please try to make the button's work, I commented out basic layouts for each buttons  */}
                     {/* Use Button */}
                     <button className="waves-effect waves-light btn"
                     onClick={handleUseClick}>USE</button>
@@ -94,6 +95,8 @@ const Main = () => {
                     </button>
                 </li>
                 ))}
+    {/* Make sure the delete button is working properly */}
+    {/* Make sure the data is populate propely inside "Use First Section", after you click "Use" button from "Inventory Section"  */}
         {/* Use First Items */}
         <div className="cold s6">
             <h2 className="use_first">Use First Items</h2>
