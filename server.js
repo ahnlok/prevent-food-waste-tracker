@@ -5,7 +5,7 @@ const routes = require("./routes")
 const app = express();
 
 // PORT
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
@@ -18,7 +18,7 @@ app.use(express.static("client/build"));
 
 // Connect to the Mongo DB
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/savefood",
+    process.env.MONGODB_URI || "mongodb://localhost/prevent-food-waste-tracker",
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
