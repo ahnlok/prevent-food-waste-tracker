@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import {Link} from "react-router-dom";
 import jwt from "jsonwebtoken";
 
 const Login = ({ setUser }) => {
@@ -37,7 +38,8 @@ const Login = ({ setUser }) => {
     <div className="container">
       <div className="row">
         <div className="col s12">
-          <h1 className="center-align">Welcome! Please login to continue</h1>
+          <h1 className="center-align">Welcome to the Food Saver</h1>
+          <h3 className="center-align">Please Sign-In to Continue</h3>
         </div>
       </div>
       <div className="row">
@@ -74,6 +76,9 @@ const Login = ({ setUser }) => {
           </div>
           <div className="row center-align">
             <button className="waves-effect waves-light btn">Sign in!</button>
+            <br />
+            <h5>Don't Have An Account?</h5>
+            <Link to="/register" className="waves-effect waves-light btn">Register</Link>
           </div>
         </form>
       </div>
