@@ -21,6 +21,7 @@ const Add = () => {
 
     return (
         <div className="container">
+            <h1 className="center">Add New Item</h1>
             <div className="row">
                 <ItemForm 
                     handleFormSubmit={handleFormSubmit}
